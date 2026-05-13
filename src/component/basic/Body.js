@@ -1,6 +1,6 @@
-import {useState} from "react";
+import {Children, useState} from "react";
 
-function Body() {
+function Body({children}) {
 
   const [number, setNumber] = useState(0);
 
@@ -13,13 +13,11 @@ function Body() {
   const bool1 = true; // 이건 표현 안된다
 
   return (
-    <header>
-      <h2>Body</h2>
-      <h2>{num1}</h2>
-      <h2>{str1}</h2>
-      <h2>{bool1}</h2>
-      <h2 onClick={handleClickNumber}>click me: {number}</h2>
-    </header>
+    <div>
+      <div>
+        {children}
+      </div>
+    </div>
   );
 }
 
