@@ -10,12 +10,6 @@ function ChildComp() {
 
 function App() {
 
-  const BodyProps = {
-    name: "리트리버",
-    location: "UK",
-    breed: ["골든", "레브라도"],
-  }
-  const name = "구지면";
   return (
     <div className="App">
       <Header/>
