@@ -20,8 +20,8 @@ function RungjiList() {
         <div>{rungjiCount}마리의 룽지 존재</div>
       </div>
       <div style={{display: "flex", flexWrap: "wrap", width: "100%", alignItems: "center"}}>
-        {rungjiList.map((index) => (
-          <Rungji key={index.id} number={index.number}/>
+        {rungjiList.map((rungji) => (
+          <Rungji key={rungji.id} number={rungji.number}/>
         ))}
       </div>
     </div>
