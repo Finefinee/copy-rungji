@@ -8,7 +8,7 @@ function RungjiList() {
 
   const addRungji = () => {
     const max = 12;
-    const number = Math.floor(Math.random() * max);
+    const number = Math.floor(Math.random() * max) + 1;
     setRungjiList([...rungjiList, {number: Number(number), id: Date.now()}]);
     setRungjiCount(rungjiCount + 1);
   }
