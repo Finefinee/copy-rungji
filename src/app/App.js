@@ -1,11 +1,11 @@
 import './App.css';
-import Body from "../component/basic/Body";
+import RungjiList from "../component/rungji/RungjiList";
 
 function App() {
 
   return (
     <div className="App">
-      <Body/>
+      <RungjiList/>
     </div>
   );
 }
